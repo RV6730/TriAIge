@@ -1,0 +1,9 @@
+fastapi==0.125.0
+uvicorn==0.44.0
+python-socketio==5.16.1
+httpx==0.28.1
+twilio==7.17.0
+python-dotenv==1.2.2
+python-multipart==0.0.26
+# Note: Anthropic Claude is called via raw httpx REST (no SDK) to avoid jiter/Rust build requirement
+# anthropic>=0.28  <-- uncomment if you have Rust+pip in your environment

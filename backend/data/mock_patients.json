@@ -1,0 +1,94 @@
+{
+  "DEFAULT": {
+    "name": "Ramesh Kumar",
+    "age": 58,
+    "gender": "Male",
+    "blood_group": "B+",
+    "aadhaar_linked": true,
+    "allergies": ["Penicillin", "Sulfonamides"],
+    "chronic_conditions": ["Type 2 Diabetes (since 2018)", "Hypertension"],
+    "current_medications": ["Metformin 500mg BD", "Amlodipine 5mg OD"],
+    "last_visit": "2024-11-12",
+    "last_visit_reason": "Routine diabetes checkup",
+    "immunizations": ["COVID-19 (Covishield x2)", "Influenza 2024"],
+    "pmjay_eligible": true,
+    "pmjay_card_number": "PMJAY-KA-2024-88721",
+    "pmjay_coverage_remaining": 423500,
+    "pmjay_coverage_total": 500000,
+    "emergency_contact": {
+      "name": "Sunita Kumar (Wife)",
+      "phone": "+919876543210"
+    },
+    "asha_worker": "Meena Bai",
+    "asha_phone": "+919823401234"
+  },
+  "ABHA-2024-DEMO-001": {
+    "name": "Priya Menon",
+    "age": 34,
+    "gender": "Female",
+    "blood_group": "O+",
+    "aadhaar_linked": true,
+    "allergies": [],
+    "chronic_conditions": ["Hypothyroidism"],
+    "current_medications": ["Thyroxine 50mcg OD"],
+    "last_visit": "2025-01-08",
+    "last_visit_reason": "Thyroid profile follow-up",
+    "immunizations": ["COVID-19 (Covaxin x2)", "Hepatitis B"],
+    "pmjay_eligible": false,
+    "pmjay_card_number": null,
+    "pmjay_coverage_remaining": 0,
+    "pmjay_coverage_total": 0,
+    "emergency_contact": {
+      "name": "Arjun Menon (Husband)",
+      "phone": "+919845120033"
+    },
+    "asha_worker": "Gomathi S.",
+    "asha_phone": "+919823456789"
+  },
+  "ABHA-2024-DEMO-002": {
+    "name": "Mohammed Irfan",
+    "age": 45,
+    "gender": "Male",
+    "blood_group": "A+",
+    "aadhaar_linked": true,
+    "allergies": ["NSAIDs"],
+    "chronic_conditions": ["Coronary Artery Disease", "Dyslipidemia"],
+    "current_medications": ["Aspirin 75mg OD", "Atorvastatin 40mg HS", "Clopidogrel 75mg OD"],
+    "last_visit": "2025-02-14",
+    "last_visit_reason": "Cardiology OPD follow-up",
+    "immunizations": ["COVID-19 (Covishield x3)"],
+    "pmjay_eligible": true,
+    "pmjay_card_number": "PMJAY-TN-2024-33201",
+    "pmjay_coverage_remaining": 180000,
+    "pmjay_coverage_total": 500000,
+    "emergency_contact": {
+      "name": "Fatima Irfan (Wife)",
+      "phone": "+919788654321"
+    },
+    "asha_worker": "Selvi K.",
+    "asha_phone": "+919823112233"
+  },
+  "ABHA-2024-DEMO-003": {
+    "name": "Ananya Roy",
+    "age": 8,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "aadhaar_linked": false,
+    "allergies": ["Amoxicillin"],
+    "chronic_conditions": ["Asthma (mild persistent)"],
+    "current_medications": ["Montelukast 5mg OD", "Salbutamol inhaler (PRN)"],
+    "last_visit": "2025-03-01",
+    "last_visit_reason": "Asthma exacerbation",
+    "immunizations": ["COVID-19 (Corbevax x1)", "MMR", "DPT booster"],
+    "pmjay_eligible": true,
+    "pmjay_card_number": "PMJAY-WB-2024-77501",
+    "pmjay_coverage_remaining": 500000,
+    "pmjay_coverage_total": 500000,
+    "emergency_contact": {
+      "name": "Sudipta Roy (Father)",
+      "phone": "+919831234567"
+    },
+    "asha_worker": "Rekha Dey",
+    "asha_phone": "+919823987654"
+  }
+}
