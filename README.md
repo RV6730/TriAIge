@@ -1,5 +1,5 @@
 ---
-title: TriAIge-Live
+title: TriAIge Live
 emoji: 🏥
 colorFrom: blue
 colorTo: blue
@@ -8,75 +8,47 @@ app_port: 7860
 pinned: false
 ---
 
-# TriAIge -- AI-Powered Emergency Triage System
-for Indian Government Hospitals
+# 🏥 TriAIge: Surveillance-First Emergency Management
 
-TriAIge is an intelligent triage system designed to streamline emergency admissions in Indian government hospitals. It integrates digital health stacks (ABHA, PM-JAY), multilingual voice-based symptom intake, and real-time ambulance synchronization to ensure critical patients receive immediate care.
-
----
-
-## 🚀 Live Demo
-- **🏥 Hospital Dashboard:** [https://still-learned-ben-crew.trycloudflare.com](https://still-learned-ben-crew.trycloudflare.com)
-- **🚚 Live Public Tracker:** [https://still-learned-ben-crew.trycloudflare.com/tracker/AMB-108](https://still-learned-ben-crew.trycloudflare.com/tracker/AMB-108)
-
-*(Note: These are temporary tunnel links active during the demo session. For a permanent deployment, follow the instructions below.)*
+**TriAIge** is an integrated health platform where **Regional Disease Surveillance** drives the **Emergency Triage** process. By identifying disease hotspots and regional criticalities first, the system intelligently prioritizes patient intake based on the prevailing health threats in their specific area.
 
 ---
 
-## 🏥 Key Features
-- **Multilingual Voice Intake:** Speak in 10+ Indian languages (Hindi, Tamil, Telugu, etc.) to report symptoms. Powered by **Sarvam AI STT** and processed by **Claude 3.5 Sonnet**.
-- **Instant Triage Scoring:** AI-generated severity scoring (1-10) and category assignment (RED/YELLOW/GREEN) based on clinical protocol.
-- **ABHA & PM-JAY Integration:** Seamless lookup of patient history and insurance coverage (Mocked for Demo).
-- **Ambulance Live-Feed:** Real-time synchronization of incoming patient vitals via WebSockets.
-- **WhatsApp Notifications:** Automatic family updates via Twilio WhatsApp API.
+## 🎯 Project Core Perspective
+
+### 1. **Predictive Disease Surveillance**
+The heart of TriAIge is its ability to monitor regional health trends across various Taluks.
+- **Regional Hotspots**: Identifies where diseases like Dengue, Malaria, or Gastroenteritis are surging.
+- **Criticality Mapping**: Assigns severity levels (**CRITICAL**, **HIGH**, **MEDIUM**, **LOW**) to specific regions.
+- **Data-Driven Insights**: Uses weekly trends to predict upcoming outbreaks before they overwhelm hospitals.
+
+### 2. **Public Precautions & Hygiene Standards**
+Before a patient reaches the hospital, TriAIge focuses on prevention.
+- **Localized Precautions**: When a Taluk is marked as "Critical," the system provides specific, immediate precautions for that region.
+- **Daily Hygiene Standards**: Promotes government-standard hygiene practices (Hand hygiene, Water safety, Food standards) to break the chain of infection.
+
+### 3. **Surveillance-Linked Patient Triage**
+Patient intake is not just based on symptoms, but on the **regional context** provided by the surveillance data.
+- **Contextual Priority**: If a patient comes from a "Critical" hotspot for Dengue, their triage priority is automatically elevated for faster screening.
+- **Voice-Activated Intake**: Efficiently handles high-volume intake during regional outbreaks through AI-powered transcription and categorization.
 
 ---
 
-## 🛠️ Tech Stack
-- **Frontend:** React 18, Vite, Tailwind CSS, Lucide React, Recharts.
-- **Backend:** FastAPI (Python), Socket.io, httpx.
-- **Infrastructure:** Docker, Render Blueprint.
+## 🚀 Key Features
+
+- **Interactive Hotspot Dashboard**: Click-to-view details on regional outbreaks and specific health guidance.
+- **Dynamic Bar Charts**: Visualizes case volumes by Taluk with color-coded severity levels.
+- **Smart Queue Management**: Ensures critical cases from high-risk zones are prioritized.
+- **Resource Telemetry**: Track incoming ambulances and hospital load in real-time.
 
 ---
 
-## 💻 Local Setup
+## 🛠️ Technology Stack
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/RV6730/TriAIge.git
-   ```
-
-2. **Backend Setup:**
-   ```bash
-   cd backend
-   python -m venv .venv
-   source .venv/bin/activate  # Or .venv\Scripts\activate on Windows
-   pip install -r requirements.txt
-   uvicorn main:socket_app --reload
-   ```
-
-3. **Frontend Setup:**
-   ```bash
-   npm install
-   npm run dev
-   ```
+- **Frontend**: React.js (Vite 8) with a premium Tailwind CSS Glassmorphism UI.
+- **Backend**: High-performance FastAPI (Python) with Socket.io for real-time telemetry.
+- **Deployment**: Dockerized on Hugging Face Spaces for 24/7 availability.
+- **Visualization**: Recharts for interactive disease trends and Taluk metrics.
 
 ---
-
-## ☁️ Permanent Deployment Instructions
-
-### Option 1: Render (Recommended)
-This repo includes a `render.yaml` blueprint for 1-click full-stack deployment.
-1. Connect your GitHub to [Render.com](https://render.com).
-2. Go to **Blueprints** -> **New Blueprint**.
-3. Select this repository and click **Deploy**.
-
-### Option 2: HuggingFace Spaces
-1. Create a new **Docker Space** on [HuggingFace](https://huggingface.co/spaces).
-2. Connect this GitHub repo.
-3. HuggingFace will build the included `Dockerfile` and your site will be live!
-
----
-
-## 📄 License
-This project is part of a hackathon prototype and is open-source.
+*Bridging the gap between Regional Surveillance and Emergency Care.*
