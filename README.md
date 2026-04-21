@@ -8,88 +8,69 @@ app_port: 7860
 pinned: false
 ---
 
-# 🏥 TriAIge: AI-Powered Emergency Triage System
+# 🏥 TriAIge: Surveillance-First Emergency Management
 
-**TriAIge** is a state-of-the-art, AI-driven emergency management and disease surveillance platform designed for Indian government hospitals. It optimizes hospital queues, tracks disease outbreaks in real-time, and provides actionable health insights to both administrators and the public.
+**TriAIge** is an integrated health platform where **Regional Disease Surveillance** drives the **Emergency Triage** process. By identifying disease hotspots and regional criticalities first, the system intelligently prioritizes patient intake based on the prevailing health threats in their specific area.
+
+---
+
+## 🎯 Project Core Perspective
+
+### 1. **Predictive Disease Surveillance**
+The heart of TriAIge is its ability to monitor regional health trends across various Taluks.
+- **Regional Hotspots**: Identifies where diseases like Dengue, Malaria, or Gastroenteritis are surging.
+- **Criticality Mapping**: Assigns severity levels (**CRITICAL**, **HIGH**, **MEDIUM**, **LOW**) to specific regions.
+- **Data-Driven Insights**: Uses weekly trends to predict upcoming outbreaks before they overwhelm hospitals.
+
+### 2. **Public Precautions & Hygiene Standards**
+Before a patient reaches the hospital, TriAIge focuses on prevention.
+- **Localized Precautions**: When a Taluk is marked as "Critical," the system provides specific, immediate precautions for that region.
+- **Daily Hygiene Standards**: Promotes government-standard hygiene practices (Hand hygiene, Water safety, Food standards) to break the chain of infection.
+
+### 3. **Surveillance-Linked Patient Triage**
+Patient intake is not just based on symptoms, but on the **regional context** provided by the surveillance data.
+- **Contextual Priority**: If a patient comes from a "Critical" hotspot for Dengue, their triage priority is automatically elevated for faster screening.
+- **Voice-Activated Intake**: Efficiently handles high-volume intake during regional outbreaks through AI-powered transcription and categorization.
 
 ---
 
 ## 🚀 Key Features
 
-### 1. **AI-Driven Emergency Triage**
-- **Voice-Activated Intake**: Emergency staff can record patient symptoms via voice; the AI automatically transcribes and categorizes the patient.
-- **Priority Scoring**: Patients are instantly assigned a Triage Level (Level 1: Immediate to Level 5: Non-Urgent) based on clinical severity.
-- **Smart Queue Management**: Dynamic sorting ensures that life-threatening cases are seen first, reducing wait times for critical care.
-
-### 2. **Regional Disease Surveillance**
-- **Hotspot Tracking**: Real-time monitoring of disease surges (Dengue, Malaria, Gastroenteritis, etc.) across various Taluks (Bengaluru South, Anekal, etc.).
-- **Interactive Criticality Maps**: Visual indicators for **CRITICAL**, **HIGH**, and **MEDIUM** risk zones.
-- **Precautions & Guidance**: Specific, actionable guidelines for each regional outbreak, helping officials coordinate local health workers.
-
-### 3. **Public Health Awareness**
-- **Hygiene Standards**: Comprehensive daily lifestyle guidelines (Hand hygiene, Water safety, Food standards) to prevent community spread.
-- **Disease Precautions**: Dedicated awareness modules for common seasonal illnesses.
-
-### 4. **Live Resource Tracking**
-- **Ambulance Telemetry**: Real-time vitals and GPS tracking for incoming emergency vehicles.
-- **Hospital Capacity**: Monitor bed availability and ER load across the region.
+- **Interactive Hotspot Dashboard**: Click-to-view details on regional outbreaks and specific health guidance.
+- **Dynamic Bar Charts**: Visualizes case volumes by Taluk with color-coded severity levels.
+- **Smart Queue Management**: Ensures critical cases from high-risk zones are prioritized.
+- **Resource Telemetry**: Track incoming ambulances and hospital load in real-time.
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: React.js with Tailwind CSS for a premium, responsive glassmorphism UI.
-- **Backend**: FastAPI (Python) for high-performance asynchronous API processing.
-- **AI/ML**: Integrated transcription and triage logic.
-- **Data Visualization**: Recharts for dynamic, interactive health trends.
-- **Deployment**: Dockerized multi-stage builds for stability on Hugging Face Spaces.
+- **Frontend**: React.js (Vite 8) with a premium Tailwind CSS Glassmorphism UI.
+- **Backend**: High-performance FastAPI (Python) with Socket.io for real-time telemetry.
+- **Deployment**: Dockerized on Hugging Face Spaces for 24/7 availability.
+- **Visualization**: Recharts for interactive disease trends and Taluk metrics.
 
 ---
 
 ## 💻 Local Setup
 
-1. **Clone the repository**:
+1. **Clone & Install**:
    ```bash
    git clone https://github.com/RV6730/TriAIge.git
    cd TriAIge
-   ```
-
-2. **Backend Setup**:
-   ```bash
-   # Create a virtual environment
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   
-   # Install dependencies
-   pip install -r requirements.txt
-   
-   # Start the server
-   uvicorn main:socket_app --reload --port 8000
-   ```
-
-3. **Frontend Setup**:
-   ```bash
    npm install
+   ```
+
+2. **Run Backend**:
+   ```bash
+   # Using the local venv
+   .\.venv\bin\python -m uvicorn main:socket_app --reload --port 8000
+   ```
+
+3. **Run Frontend**:
+   ```bash
    npm run dev
    ```
 
 ---
-
-## ☁️ Deployment
-
-This project is optimized for **Hugging Face Spaces** using Docker. The configuration is stored in the `Dockerfile` at the root, which:
-- Uses a Python 3.10 base image.
-- Serves the pre-built React frontend from the `/dist` directory.
-- Exposes the app on port **7860**.
-
----
-
-## 🛡️ Daily Hygiene Standards
-*Maintain these to stay safe:*
-- **Soap & Water**: Wash hands for 20s before meals.
-- **Filtered Water**: Only consume boiled or UV-filtered water.
-- **Ventilation**: Ensure cross-ventilation in living spaces.
-- **Fumigation**: Coordinate with local bodies for mosquito control in high-risk zones.
-
----
-*Developed for the Future of Healthcare in India.*
+*Bridging the gap between Regional Surveillance and Emergency Care.*
