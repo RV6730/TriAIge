@@ -1,13 +1,14 @@
 ---
-title: TriAIge Live 🏥
+title: TriAIge-Live
 emoji: 🏥
-colorFrom: indigo
-colorTo: indigo
+colorFrom: blue
+colorTo: blue
 sdk: docker
+app_port: 7860
 pinned: false
 ---
 
-# TriAIge — AI-Powered Emergency Triage System
+# TriAIge -- AI-Powered Emergency Triage System
 for Indian Government Hospitals
 
 TriAIge is an intelligent triage system designed to streamline emergency admissions in Indian government hospitals. It integrates digital health stacks (ABHA, PM-JAY), multilingual voice-based symptom intake, and real-time ambulance synchronization to ensure critical patients receive immediate care.

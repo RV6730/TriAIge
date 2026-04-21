@@ -2,7 +2,7 @@ FROM python:3.10-slim
 
 # Install Node.js for building the React frontend
 RUN apt-get update && apt-get install -y curl && \
-    curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
     apt-get install -y nodejs
 
 # Set working directory
@@ -23,5 +23,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # We will use 7860 as it's the default for HuggingFace (and others can map it)
 EXPOSE 7860
 
+# Set working directory to the backend folder for the final run
+WORKDIR /app/backend
+
 # Command to run the application using Uvicorn
-CMD ["uvicorn", "main:socket_app", "--host", "0.0.0.0", "--port", "7860"]
+# We use main:socket_app because we are now in the backend directory
+CMD ["python3", "-m", "uvicorn", "main:socket_app", "--host", "0.0.0.0", "--port", "7860", "--workers", "1", "--proxy-headers", "--forwarded-allow-ips", "*"]

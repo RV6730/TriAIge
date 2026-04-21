@@ -28,6 +28,10 @@ import os
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
 @app.get("/")
 async def root():
     # If frontend is built, serve index.html, else return API status
@@ -38,7 +42,7 @@ async def root():
     return {
         "service": "TriAIge API",
         "status": "operational",
-        "docs": "/docs",
+        "health": "/health",
     }
 
 # At the bottom, mount the dist folder and handle React Router fallbacks
