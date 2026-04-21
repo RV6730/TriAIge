@@ -1,0 +1,36 @@
+# TriAIge Backend — never commit .env
+backend/.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Frontend
+node_modules/
+dist/
+.env.local
+<<<<<<< HEAD
+=======
+
+# Binaries and Archives
+*.exe
+*.zip
+*.log
+cf_monolith_new.log
+pinggy.log
+cloudflared
+
+# Nested deployments
+clean_deploy/
+deploy_hf/
+final_deploy_hf/
+final_hf_deploy/
+final_push_demo/
+super_final_hf/
+deploy_script.ps1
+.dockerignore
+>>>>>>> deploy-branch

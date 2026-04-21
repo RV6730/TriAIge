@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: triaige
+    env: python
+    buildCommand: "./render-build.sh"
+    startCommand: "cd backend && uvicorn main:socket_app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
+      - key: NODE_VERSION
+<<<<<<< HEAD
+        value: 18.17.0
+=======
+        value: 22.14.0
+>>>>>>> deploy-branch
