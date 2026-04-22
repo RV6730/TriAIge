@@ -10,7 +10,15 @@ pinned: false
 
 # 🏥 TriAIge: Surveillance-First Emergency Management
 
-**TriAIge** is an integrated health platform where **Regional Disease Surveillance** drives the **Emergency Triage** process. By identifying disease hotspots and regional criticalities first, the system intelligently prioritizes patient intake based on the prevailing health threats in their specific area.
+**TriAIge** is an integrated health platform where **Regional Disease Surveillance** drives the **Emergency Triage** process. By identifying disease hotspots and regional criticalities first, the platform optimizes emergency response.
+
+---
+
+## 🔗 Live Demo
+
+**Experience TriAIge now**: [https://tri-a-ige.vercel.app/](https://tri-a-ige.vercel.app/)
+
+> ⚠️ **Note**: The application opens with the **Surveillance Interface** as the default landing page, giving you an immediate view of regional disease hotspots and criticality levels.
 
 ---
 
@@ -73,4 +81,5 @@ Patient intake is not just based on symptoms, but on the **regional context** pr
    ```
 
 ---
+
 *Bridging the gap between Regional Surveillance and Emergency Care.*
